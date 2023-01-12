@@ -1,0 +1,106 @@
+## TERMINAL
+
+* O que é Command Line?
+- GUI
+    * Graphical User Interface
+    * Interface gráfica de usuário
+    * Janelas, botões, menus, mouse, ver vídeos, jogar, trabalhar com imagens e edição de vídeo.
+
+- CLI
+    * Command Line Interface
+    * Interface de linha de comando
+    * Enviar comandos
+    * Ver resultados dos comandos
+    * Shell ou interpretador é o ambiente
+        * Executa os comandos
+        * Conversa com o kernel
+        * Bash: Bourne-again Shell
+            * por padrão, existe em ambientes Linux
+
+## Sintaxe
+
+- sua sintaxe consiste em iniciar com um Command seguido de Options e por fim Arguments
+EXEMPLOS:
+
+ls -lh /usr/bin
+
+ls : Command (programa que você está rodando)
+
+-lh : Options (mudar o comportamento, explicar ao comando como deve funcionar, geralmente começa com um traço, geralmente começa com somente uma letra, a maioria dos comando oferecem muitas opções)
+
+/usr/bin : Arguments (onde o comando irá operar, caminho do arquivo ou diretórios, ou seja seu diretório de pastas)
+
+* Algumas dicas e truques
+- tab completion: serve para o terminal fazer o auto-complit e mostrar todas as opções possiveis, utilizando a tecla tab 
+    - Command
+    - Arguments
+
+## arquivos e diretórios
+
+- informando o diretório atual: pwd mostra todo o diretório desde a sua raiz
+
+- cd (change directory): mudar de diretório
+
+- ls: Exibir arquivos/diretórios do diretório atual
+    * ls -l: trará mais informações dos arquivos 
+    * ls -a: mostrará todos os arquivos encontrados
+    * ls -h: mostrará os arquivos de uma maneira mais próxima dos humanos, como por exemplo indicando o tamanho desses arquivos
+    * ls -s: ordenarar os arquivos pelo seu tamanho, ou seja do maior para o menor 
+    * lembrando que todos podem ser utilizados juntos, tornando assim as informações mais precisas.
+
+## Obtendo informações dos arquivos
+    - file: esse comando irá trazer algumas informações e tipo do arquivo 
+    - stat: esse comando irá trazeir algumas informações como por exemplo, o seu dono, a sua modificação e o seu tamanho.
+
+## mkdir 
+    - criando diretórios  
+
+## touch
+    - altera registro de data e hora de arquivos ou pastas
+    - tambem cria um ou mais arquivos 
+
+## cp 
+    - comando que copia outros arquivos
+    - lembrando que para fazer um comando recurcivo ou seja, varios arquivos dentro de uma pasta tem que usar o ( cp -r )
+
+## mv
+    - comando responsavel por mover ou renomear os arquivos 
+
+## rm 
+    - comando responsavel por remover um arquivo (para sempre)
+    - usando o recursivo -r o terminal irá remover todos os arquivos filhos desse diretório
+
+## wildcards (curinga)
+    - esses curingas são os * e ?
+    - o * serve para complementar a busca por um arquivo, exemplo: digamos que o usuário queira mover um arquivo para um novo diretório, ao usar as iniciais deste diretório com o complemento *
+    - já o ? serve para o mesmo fundamento do *, entretanto para apenas um caracter
+
+## find
+    - serve para encontrar arquivos e diretórios
+    - sua estrutura consiste assim: find <path> arg [expression], ou seja
+        - type < directory || file >
+        - name
+        EXEMPLO: find . -type d -name "*d*"
+
+## ver conteúdo de arquivos
+    - less
+    - cat 
+        OBS: ambos os comandos server para a visualização dos arquivos, entretanto o cat printa o conteúdo no terminal, já o less o usuário tem um dominior maior sobre essa aplicação, tornando assim mais seguro.
+
+## editar arquivos 
+    - nano
+    - vim
+        Ambos funcionam como editores de texto no terminal, serve para editar algum arquivo e depois podendo até salvar o mesmo
+
+
+
+
+
+ 
+
+                            
+
+
+
+
+        

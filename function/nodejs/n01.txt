@@ -1,0 +1,13 @@
+## NODE JS
+    - É definido como um ambiente de execução JS server-side, ou seja back-end
+    - o v8 é o motor do JavaScript, ele é o interpretador da linguagem para a máquina, criado em C++
+    ## COMO FUNCIONA O NODE.JS?
+        - o seu funcionamento é similar ao de um famework, pois permite que o dev escreva os seus códigos em JS, faça a compilação deles e os execute.
+        Contudo, a diferença é que a aplicação rodará em uma máquina virtual específica, a v8. A máquina virtual em questão é a mesma do google desenvolveu para o chrome com o mesmo objetivo de executar os códigos em JS.
+
+** REPL
+    - Read Eval Print Loop
+    - Escrever JavaScript em um ambiente node, direto no terminal
+    - Para entrar digite "node" no terminal
+
+

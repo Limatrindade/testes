@@ -1,0 +1,126 @@
+# DOM (Document Object Model)
+
+* É o HTML convertido para um objeto Javascript
+* API que representa e interage com o HTML
+* Estrutura de dados do tipo árvore, criada pelo browser
+* Propriedades e métodos
+
+# Para que?
+
+* Javascript usa o DOM para se conectar ao HTML
+* Manipular o HTML com o Javascript
+* Só existe programaçãO web porque existe o DOM
+
+/* algumas maneiras de capturar elementos
+
+- getElementById
+- getElementByClassName
+- getElementByTagName
+- querySelector
+- querySelectorAll
+
+*/
+
+// Manipulando conteúdos 
+
+* textContent
+EXEMPLOS:
+
+const element = document.querySelector('h1')
+element.textContent = "Olá Devs"
+// saída no console: Olá Devs
+element.textContent += " Olá Devs"
+// saída no console: Meu Blog Olá Devs
+
+* innerText
+EXEMPLOS:
+
+const element = document.querySelector('h1')
+element.innerText = "Olá Devs!"
+// saída no console: Olá Devs!
+
+* innerHTML 
+EXEMPLOS:
+
+const element = document.querySelector('h1')
+element.innerHTML = "Olá Devs! <small>!!!</small>"
+// saída no console: Olá Devs! !!!
+
+* Manipulando o value de um input
+EXEMPLOS:
+
+const element = document.querySelector('input')
+element.value = "Valor que eu quiser"
+// saída no console: <mensagem dentro da caixa do input> Valor que eu quiser <mensagem  dentro da caixa do input>
+
+* Manipulando elementos em atributos
+EXEMPLOS:
+
+const header = document.querySelector('header')
+header.setAttribute('id', 'header')
+const headerID = document.querySelector('#header')
+console.log(headerID)
+// saída no console: <header id="header">...</header>
+pegando um atributo: console.log(headerID.getAttribute('class'))
+// saída no console: (nome dado para o class do header)
+removendo o atributo: header.removeAttribute('id')
+
+
+* Alterando estilos via Javascript
+EXEMPLOS:
+
+const element = document.querySelector('body')
+element.style.backgroundColor = "#f9f9d2"
+console.log(element.style.backgroundColor) // rgb(249, 243, 210)
+
+* Alterando estilos utilizando o classList
+
+element.classList.add() // irá adicionar o style
+element.classList.remove() // irá remover o style
+element.classList.toggle() // funcionara como um interropitor, se o style existe ele irá remover, agora caso não exista ele irá adicionar
+
+* Navegando pelos elementos
+- parentNode parentElement
+EXEMPLOS:
+
+const body = document.querySelector('body')
+console.log(body.parentNode) // irá pegar o HTML, pois o mesmo é pai do body
+
+const element = document.querySelector('h1')
+console.log(element.parentElement) // irá pegar o header, pois o mesmo é o pai do h1
+
+* Navegando pelos elementos filhos
+- childNodes children
+EXEMPLOS:
+
+const el = document.querySelector('body')
+console.log(el.childNodes) // irá trazer os filhos do elemento body em formato de NodeList
+
+console.log(el.children) // irá trazer os filhos do elemento body em formato de HTMLCollection(2)
+
+OBS: tambem temos mais duas propriedades como por EXEMPLOS
+- firstChild, firstElementChild, lastChild, lastElementChild
+
+* Navegando pelos elementos irmãos 
+- nextSibling nextElementSibling
+EXEMPLOS:
+
+const el = document.querySelector('header')
+console.log(el.nextSibling), console.log(el.nextElementSibling) // ambos irão pegar os elementos irmaõs porém com uma diferença, o nextElementSibling irá desconsiderar o espaço entre os elementos 
+
+* Criando e adicionando elementos 
+EXEMPLOS:
+const div = document.createElement('div')
+div.innerText = "Olá Devs!"
+
+const body = document.querySelector('body')
+body.append(div)
+OUTRO EXEMPLO:
+body.prepend(div) // ou seja desta vez ele irá adicionar esse elemento primeiro
+
+* insertBefore
+EXEMPLO:
+const body = document.querySelector('body')
+const script = body.querySelector('script')
+body.insertBefore(div, script) // ou seja irá adicionar o elemento entre os parametros passado
+

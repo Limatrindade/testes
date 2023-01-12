@@ -1,0 +1,27 @@
+## EVENTOS 
+
+* O QUE SÃO EVENTOS NO DOM? 
+- Os eventos são basicamentes um conjuto de ações que são realizadas em um determinado elemento da pagina web, seja ele um texto, uma imagem, ou uma div, por exemplo. Muitas das interações do usuário que está visitando sua página com o conteúdo do seu site podem ser consideradas eventos. Existe uma infinidade de eventos definidos para o uso em javascript, dentre elas as mais utilizadas são:
+
+* onBlur = remove o foco do elemento 
+* onChange = muda o valor do elemento
+* onClick = o elemento é clicado pelo usuário
+* onFocus = o elemento é focado
+* onKeyPress = o usuário pressiona uma tecla sobre o elemento
+* onLoad = carrega o elemento por completo
+* onMouseOver = define ação quando o usuário passa o mouse sobre o elemento
+* onMouseOut = define ação quando O usuário retira o mouse sobre o elemento
+* onSubmit = define ação ao enviar um formulário
+
+* COMO USAR OS EVENTOS EM JAVASCRIPT?
+
+Existem diversas maneiras de se aplicar esses eventos aos elementos HTML, são elas:
+- Inline
+- Em um arquivo externo, usando um manipulador de eventos 
+
+* Em um evento externo por exemplo para chamar o mesmo, precisando de um manipulador de eventos, nesse caso vamos usar o EVENT LISTENER que adiciona ou remove um evento sobre qualquer elemento. O EVENT LISTENER disponibiliza duas funções principais, são elas:
+
+- addEvent = adiciona uma função que será disparada quando ocorrer determinado evento no objeto.
+- removeEvent = remove um listener previamente adicionar em um objeto e retorna true em caso de sucesso
+
+

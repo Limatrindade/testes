@@ -1,0 +1,48 @@
+<script>
+    //1:
+    let weight
+
+    //2:
+    console.log(typeof weight)
+
+    //3:
+    const name = "matheus"
+    const age = 22
+    const star = 2.2
+    const isSubcribed = true
+    const peso = 55
+    
+    //4.1:
+    let student = {
+        name: "matheus",
+        age: 22,
+        star: 2.2,
+        isSubcribed: true
+    }
+
+    //4.2:
+    console.log(`O ${name} de idade ${age} pesa ${peso} kg.`)
+
+    //5:
+    const students = []
+
+    //6:
+    students[0] = student // outra forma de fazer students = [student]
+    console.log(students)
+    //7:
+    console.log(students[0])
+
+    //8:
+    const newPerson = {
+        name: "rodrigo",
+        age: 55,
+        star: 3.9
+    }
+
+    students[1] = newPerson
+    console.log(students)
+
+    //9:
+    console.log(a)
+    var a = 1 // o codigo não ira gerar erro a engine do js vai fazer o hoisting, o valor será undefined
+</script>

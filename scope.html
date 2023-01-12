@@ -1,0 +1,27 @@
+<script>
+    console.log("mostrando o comportamento do var")
+    // o var é uma variável do tipo global e local, ou seja
+    // o motor do javascript faz o hoisting jogando ela para cima do codigo
+
+   console.log('Existe var antes do bloco?', x)
+
+   {
+        var x = "sim"
+   }
+
+    console.log('Existe var depois do bloco?', x)
+
+
+    console.log("mostrando o comportamento do let e const")
+    //const e let são variáveis do tipo local, ou seja só funcionam no escopo onde foi criada
+
+    console.log("Existe let antes do bloco?", y)// vai gerar erro, está fora do scope
+
+    {
+        console.log("Existe let antes e dentro do bloco?", y)// vai gerar erro, pois em let não tem hoisting
+        let y = "sim"
+        console.log("Existe let depois e dentro do bloco?", y)
+    }
+
+    console.log("Existe let depois do bloco?", y)// vai gerar erro, está fora do scope
+</script>

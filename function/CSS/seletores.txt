@@ -1,0 +1,100 @@
+# seletores
+- Conecta um elemento HTML5 com o CSS3 a fim de alterar o elemento
+
+## Tipos
+
+* Element selector
+    - Todos os elementos do HTML5
+* ID selector
+    - Um elemento que tenha um atributo `id`
+    - Cada id deverá ser único
+* Class selector
+    - Os elementos que contenha um atributo `class`
+    - Podemos ter uma ou mais classes
+* Attribute selector
+    - Um elemnto que tenha um atributo específico
+* Pseudo-class selector 
+    - elementos em um estado específico
+
+## Múltiplos
+
+- Você poderá selecionar múltiplos elementos e aplicar alguma regra css para todos eles.
+
+- usamos uma separação por vírgulas para isso
+Exemplo: 
+    ´´´ css
+            h1, p, a {
+                color: red;
+        } ´´´
+
+# Combinators
+
+- Combinadores, pois eles trabalhma para buscar e combinar seletores a fim de aplicar uma estilização
+
+## Descendant Combinators
+
+* Identificado por um espaço entre os seletores
+* Busca um elemento dentro de outro
+
+´´´css
+    body article h2
+´´´
+
+## Child Combinator
+
+* Identificado pelo sinal ´>´ entre dois seletores
+* seleciona somente o elemento que é filho direto do pai
+* elementos depois do filho direto serão desconsiderados
+
+```css
+    body > ul > li
+´´´ 
+
+## adjacent sibling Combinator
+
+* Identificado pelo sinal ` + ` entre dois seletores
+* seleciona somente o elemento do lado direito que é irmão direto da hierarquia
+
+´´´css 
+    h1 + p
+´´´
+## general sibling Combinator
+
+**********
+
+#pseudo-classes
+
+é um tipo de seletor que irá selecionar um elemento que estiver em um estado específico
+
+Exemplo: é o primeiro elemento dentro de uma caixa, ou, o elemento está com o ponteiro do mouse em cima dele
+
+pseudo-classes começam com 2 pontos seguido do nome da pseudo class
+`:pseudo-class-name`
+
+## selecionando elementos com pseudo-classes
+
+* :first-child
+* :ntn-of-type()
+* :ntn-child()
+
+## ações do usuário
+
+* :hover
+* :focus
+
+## atributos
+
+* :disabled
+* :required
+
+# Pseudo-elementos
+
+Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS
+
+` ::pseudo-element-name `
+
+## Exemplos
+
+* ::before
+* ::after
+* ::first-line

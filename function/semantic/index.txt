@@ -1,0 +1,28 @@
+Web Semântica
+
+- Nada mais é que adicionar significado á uma linguagem, no caso do HTML5, para dar significado ao conteúdo.
+- Serve tbm para controlar a organização e apresentação do nosso conteúdo
+- Isso se torna extremamente relevante para acessibilidade, e SEO
+
+As Tags
+
+- algumas tags tem significados especificos e orientações claras sobre onde devem ficar na página e o motivo dela existir.
+
+<!--
+    Seções comuns em docx HTML5
+
+    - cabeçalho <header>
+    - navegação <nav>
+    - conteúdo principal <main>
+    - barra lateral <aside>
+    - seção <section>
+    - artigo <article>
+    - rodapé <footer>
+
+    * alguns elementos não Semânticos, para uso genéricos
+
+    - <div></div>
+    - <span></span>
+-->
+
+
